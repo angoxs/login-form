@@ -16,6 +16,16 @@ body {
   align-items: center;
 }
 
+content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+content img {
+  margin-right: 5px;
+}
+
 .form-container {
   width: 280px;
   height: 380px;
@@ -53,6 +63,7 @@ body {
   outline: none;
   color: black;
   transition: 0.25s;
+  background: none;
 }
 
 .form-container button[type="submit"] {
@@ -79,4 +90,5 @@ body {
 .form-container button[type="submit"]:hover {
   background: #5ba0f1;
   transform: translateY(-6px);
+  box-shadow: 0 20px 10px rgba(12, 122, 221, 0.1);
 }
