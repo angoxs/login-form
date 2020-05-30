@@ -1,20 +1,10 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-import { motion } from "framer-motion";
-
 export default function Home({ isVisible }) {
   return (
     <Layout home>
-      <motion.form
-        action=""
-        className="form-container"
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["8%", "8%", "20%", "8%", "8%"],
-        }}
-      >
+      <form action="" className="form-container">
         <content>
           <img
             src="https://cl.ly/268df971f468/download/Group%2525203.png"
@@ -28,11 +18,11 @@ export default function Home({ isVisible }) {
         <p>
           Forgot <span>Password?</span>
         </p>
-        <motion.button type="submit">Log in </motion.button>
+        <button type="submit">Log in </button>
         <p>
           Don't have an account? <span>Sign up</span>
         </p>
-      </motion.form>
+      </form>
     </Layout>
   );
 }
